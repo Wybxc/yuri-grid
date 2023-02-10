@@ -1,12 +1,12 @@
-![动画生涯个人喜好表](https://github.com/itorr/anime-grid/blob/master/simple.jpg?raw=true)
+![动画生涯个人喜好表](./simple.jpg)
 
-# 🤖「动画生涯个人喜好表生成器」
+# ⚜️「百合生涯个人喜好表生成器」
 
-一个生成 动画生涯个人喜好表 的在线网页工具
+一个生成 百合生涯个人喜好表 的在线网页工具
 
 ## 地址 
 
-https://lab.magiconch.com/anime-grid/
+https://wybxc.github.io/yuri-grid/html
 
 ## 类别
 
@@ -30,7 +30,9 @@ https://lab.magiconch.com/anime-grid/
  - 最讨厌
 
 ## GitHub
-https://github.com/itorr/anime-grid
+https://github.com/Wybxc/anime-grid
+
+Forked from https://github.com/itorr/anime-grid
 
 
 ## 利用
