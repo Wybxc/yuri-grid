@@ -115,7 +115,7 @@ ctx.textBaseline = 'middle';
 ctx.lineCap  = 'round';
 ctx.lineJoin = 'round';
 ctx.fillText(
-    '@卜卜口 · lab.magiconch.com/anime-grid · 神奇海螺试验场 · 动画信息来自番组计划 · 禁止商业、盈利用途',
+    'https://wybxc.github.io/yuri-grid/html · Forked from 神奇海螺试验场 · 动画信息来自番组计划 · 禁止商业、盈利用途',
     19 * scale,
     (height - 10) * scale
 );
@@ -135,7 +135,7 @@ ctx.save();
 
 
 ctx.font = 'bold 24px sans-serif';
-ctx.fillText('动画生涯个人喜好表',contentWidth / 2, -24 );
+ctx.fillText('百合生涯个人喜好表',contentWidth / 2, -24 );
 
 
 
@@ -202,7 +202,7 @@ const openSearchBox = (index)=>{
     
     searchInputEl.focus();
 
-    const value = bangumis[currentBangumiIndex];
+    const value = bangumis[currentBangumiIndex] ?? '百合';
 
     if(!/^\d+$/.test(value)){
         searchInputEl.value = value;
@@ -212,7 +212,7 @@ const openSearchBox = (index)=>{
 const closeSearchBox = ()=>{
     htmlEl.setAttribute('data-no-scroll',false);
     searchBoxEl.setAttribute('data-show',false);
-    searchInputEl.value = '';
+    searchInputEl.value = '百合';
     formEl.onsubmit();
 };
 const setInputText = ()=>{
@@ -272,6 +272,7 @@ formEl.onsubmit = async e=>{
     searchFromAPI(keyword);
 }
 
+searchInputEl.value = "百合";
 formEl.onsubmit();
 
 
@@ -356,7 +357,7 @@ const closeOutput = ()=>{
 }
 
 const downloadImage = ()=>{
-    const fileName = '[神奇海螺][动画生涯个人喜好表].jpg';
+    const fileName = '[百合生涯个人喜好表].jpg';
     const mime = 'image/jpeg';
     const imgURL = canvas.toDataURL(mime,0.8);
     const linkEl = document.createElement('a');
